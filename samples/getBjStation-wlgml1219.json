@@ -1,0 +1,357 @@
+{
+  "profile_image": "//profile.img.afreecatv.com/LOGO/wl/wlgml1219/wlgml1219.jpg",
+  "station": {
+    "display": {
+      "main_type": "1110",
+      "title_type": "IMAGE",
+      "title_text": "",
+      "profile_text": "♥ 방송시간 알림ON ♥ / 무단 클립, 캐치 블랙 입니다.",
+      "skin_type": 0,
+      "skin_no": 0,
+      "title_skin_image": ""
+    },
+    "groups": [
+      {
+        "idx": 12940,
+        "group_no": 3,
+        "priority": 999,
+        "info": {
+          "group_name": "뉴비존",
+          "group_class_name": "badge_newbj",
+          "group_background_color": "#fb4848"
+        }
+      }
+    ],
+    "menus": [
+      {
+        "bbs_no": 96835149,
+        "station_no": 26251366,
+        "auth_no": 101,
+        "w_auth_no": 216,
+        "display_type": 104,
+        "rnum": 1,
+        "line": 1,
+        "indention": 0,
+        "name": "찌히 게시판",
+        "name_font": 0,
+        "main_view_yn": 0,
+        "view_type": 1
+      },
+      {
+        "bbs_no": 96835150,
+        "station_no": 26251366,
+        "auth_no": 101,
+        "w_auth_no": 259,
+        "display_type": 101,
+        "rnum": 2,
+        "line": 1,
+        "indention": 0,
+        "name": "방명록",
+        "name_font": 0,
+        "main_view_yn": 0,
+        "view_type": 1
+      },
+      {
+        "bbs_no": 96886797,
+        "station_no": 26251366,
+        "auth_no": 101,
+        "w_auth_no": 259,
+        "display_type": 104,
+        "rnum": 3,
+        "line": 0,
+        "indention": 0,
+        "name": "공지",
+        "name_font": 0,
+        "main_view_yn": 0,
+        "view_type": 0
+      }
+    ],
+    "upd": {
+      "station_no": 26251366,
+      "user_id": "wlgml1219",
+      "asp_code": 0,
+      "fan_cnt": 3203,
+      "today0_visit_cnt": 555,
+      "today1_visit_cnt": 0,
+      "total_visit_cnt": 101524,
+      "today0_ok_cnt": 70,
+      "today1_ok_cnt": 0,
+      "today0_fav_cnt": 70,
+      "today1_fav_cnt": 0,
+      "total_ok_cnt": 4088,
+      "total_view_cnt": 76774
+    },
+    "vods": [
+      {
+        "bbs_no": 96835147,
+        "station_no": 26251366,
+        "auth_no": 101,
+        "w_auth_no": 216,
+        "display_type": 108,
+        "rnum": 0,
+        "line": 1,
+        "indention": 0,
+        "name": "방송 다시보기",
+        "name_font": 0,
+        "main_view_yn": 0,
+        "view_type": 1
+      },
+      {
+        "bbs_no": 96835148,
+        "station_no": 26251366,
+        "auth_no": 101,
+        "w_auth_no": 216,
+        "display_type": 109,
+        "rnum": 0,
+        "line": 1,
+        "indention": 0,
+        "name": "방송 하이라이트",
+        "name_font": 0,
+        "main_view_yn": 0,
+        "view_type": 1
+      }
+    ],
+    "sns": [],
+    "broad_start": "2024-02-07 13:37:11",
+    "grade": 0,
+    "jointime": "2023-11-11 16:36:27",
+    "station_name": "찌히♥",
+    "station_no": 26251366,
+    "station_title": "",
+    "total_broad_time": 1676084,
+    "user_id": "wlgml1219",
+    "user_nick": "찌히♥",
+    "active_no": 0
+  },
+  "broad": {
+    "user_id": "wlgml1219",
+    "broad_no": 253930757,
+    "broad_title": "-녹방입니당!-",
+    "current_sum_viewer": 10,
+    "broad_grade": 0,
+    "is_password": false
+  },
+  "starballoon_top": [
+    {
+      "user_id": "chakk53",
+      "user_nick": "분홍이소시지",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/ch/chakk53/chakk53.jpg"
+    },
+    {
+      "user_id": "qnaqna04",
+      "user_nick": "찌히♡해안",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/qn/qnaqna04/qnaqna04.jpg"
+    },
+    {
+      "user_id": "jjyy5808",
+      "user_nick": "돈밖에없어",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/jj/jjyy5808/jjyy5808.jpg"
+    },
+    {
+      "user_id": "zzang109",
+      "user_nick": "피리초잇",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/zz/zzang109/zzang109.jpg"
+    },
+    {
+      "user_id": "karasis19",
+      "user_nick": "찌히♥김갈비",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/ka/karasis19/karasis19.jpg"
+    },
+    {
+      "user_id": "lgcjafk",
+      "user_nick": "마리나쓰레빠",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/lg/lgcjafk/lgcjafk.jpg"
+    },
+    {
+      "user_id": "newtty99",
+      "user_nick": "[찧]유감^へ^",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/ne/newtty99/newtty99.jpg"
+    },
+    {
+      "user_id": "ddd3185",
+      "user_nick": "찌히는머머리",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/dd/ddd3185/ddd3185.jpg"
+    },
+    {
+      "user_id": "jonghwan3991",
+      "user_nick": "떡잎마을싸패",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/jo/jonghwan3991/jonghwan3991.jpg"
+    },
+    {
+      "user_id": "6seong",
+      "user_nick": "[찧]볼빵빵",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/6s/6seong/6seong.jpg"
+    },
+    {
+      "user_id": "kijo7",
+      "user_nick": "기조S2",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/ki/kijo7/kijo7.jpg"
+    },
+    {
+      "user_id": "7016kdh",
+      "user_nick": "챗만치는건빵",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/70/7016kdh/7016kdh.jpg"
+    },
+    {
+      "user_id": "wlswnals11",
+      "user_nick": "Tu.es.jolie",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/wl/wlswnals11/wlswnals11.jpg"
+    },
+    {
+      "user_id": "mjm0102",
+      "user_nick": "손꽁얼었찌히",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/mj/mjm0102/mjm0102.jpg"
+    },
+    {
+      "user_id": "jiein34",
+      "user_nick": "찌히♥지에인",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/ji/jiein34/jiein34.jpg"
+    },
+    {
+      "user_id": "qkqhqn",
+      "user_nick": "우기팡팡",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/qk/qkqhqn/qkqhqn.jpg"
+    },
+    {
+      "user_id": "psh6681",
+      "user_nick": "후니441",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/ps/psh6681/psh6681.jpg"
+    },
+    {
+      "user_id": "puyupuyu",
+      "user_nick": "쥬드[무공해]",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/pu/puyupuyu/puyupuyu.jpg"
+    },
+    {
+      "user_id": "kqodmltjd",
+      "user_nick": "[찌히]급식",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/kq/kqodmltjd/kqodmltjd.jpg"
+    },
+    {
+      "user_id": "jmo1004",
+      "user_nick": "1일1애교",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/jm/jmo1004/jmo1004.jpg"
+    }
+  ],
+  "sticker_top": [
+    {
+      "user_id": "6seong",
+      "user_nick": "찌히만의척애",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/6s/6seong/6seong.jpg"
+    },
+    {
+      "user_id": "kqodmltjd",
+      "user_nick": "[찧]급식좌",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/kq/kqodmltjd/kqodmltjd.jpg"
+    },
+    {
+      "user_id": "sm8531",
+      "user_nick": "찌히♥킹아서",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/sm/sm8531/sm8531.jpg"
+    },
+    {
+      "user_id": "kkksjhj",
+      "user_nick": "찐악마",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/kk/kkksjhj/kkksjhj.jpg"
+    },
+    {
+      "user_id": "poingleee1",
+      "user_nick": "[C9]솥삼",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/po/poingleee1/poingleee1.jpg"
+    },
+    {
+      "user_id": "ydc118",
+      "user_nick": "비밀결사",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/yd/ydc118/ydc118.jpg"
+    },
+    {
+      "user_id": "zizibe1231",
+      "user_nick": "응에몬",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/zi/zizibe1231/zizibe1231.jpg"
+    },
+    {
+      "user_id": "youngsin",
+      "user_nick": "찌히와로움",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/yo/youngsin/youngsin.jpg"
+    },
+    {
+      "user_id": "qortndnjs",
+      "user_nick": "m16소총수",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/qo/qortndnjs/qortndnjs.jpg"
+    },
+    {
+      "user_id": "paka9998",
+      "user_nick": "PAKA9999",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/pa/paka9998/paka9998.jpg"
+    },
+    {
+      "user_id": "puyupuyu",
+      "user_nick": "쥬드[무공해]",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/pu/puyupuyu/puyupuyu.jpg"
+    },
+    {
+      "user_id": "ytttttt",
+      "user_nick": "탱글말황",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/yt/ytttttt/ytttttt.jpg"
+    },
+    {
+      "user_id": "friend1985a",
+      "user_nick": "FC챌린저",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/fr/friend1985a/friend1985a.jpg"
+    },
+    {
+      "user_id": "qkrwoqja02",
+      "user_nick": "대륙♡칸",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/qk/qkrwoqja02/qkrwoqja02.jpg"
+    },
+    {
+      "user_id": "dkvmflzkxlqm",
+      "user_nick": "꽃무릇",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/dk/dkvmflzkxlqm/dkvmflzkxlqm.jpg"
+    },
+    {
+      "user_id": "rlawlsrn825",
+      "user_nick": "주이유",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/rl/rlawlsrn825/rlawlsrn825.jpg"
+    },
+    {
+      "user_id": "kcw12937",
+      "user_nick": "철감봉킴상교",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/kc/kcw12937/kcw12937.jpg"
+    },
+    {
+      "user_id": "dkfkddl159",
+      "user_nick": "꼬꼬♥아들",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/dk/dkfkddl159/dkfkddl159.jpg"
+    },
+    {
+      "user_id": "avxzaf",
+      "user_nick": "버원",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/av/avxzaf/avxzaf.jpg"
+    },
+    {
+      "user_id": "brightcrow",
+      "user_nick": "♠까막",
+      "profile_image": "//profile.img.afreecatv.com/LOGO/br/brightcrow/brightcrow.jpg"
+    }
+  ],
+  "subscription": {
+    "count": 61
+  },
+  "is_best_bj": false,
+  "is_partner_bj": false,
+  "is_sports_bj": false,
+  "is_ppv_bj": false,
+  "is_af_supporters_bj": false,
+  "is_shopfreeca_bj": false,
+  "is_favorite": false,
+  "is_subscription": false,
+  "is_owner": false,
+  "is_manager": false,
+  "is_notice": false,
+  "is_adsence": true,
+  "is_mobile_push": false,
+  "subscribe_visible": "on",
+  "country": "KR",
+  "current_timestamp": "2024-02-07 15:01:50"
+}

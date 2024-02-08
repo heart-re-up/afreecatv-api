@@ -1,6 +1,9 @@
 import { Expose } from "class-transformer";
 
-export class Bbs {
+/**
+ * 게시판
+ */
+export class Board {
   @Expose({ name: "bbs_no" })
   public readonly bbsNo: number; // 63419261,
 

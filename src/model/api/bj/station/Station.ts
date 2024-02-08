@@ -3,8 +3,8 @@ import { DateTime } from "luxon";
 import { Sns } from "./Sns";
 import { Group } from "./Group";
 import { Display } from "./Display";
-import { Upd } from "./Upd";
-import { Bbs } from "./Bbs";
+import { BroadcastCenterInfo } from "./BroadcastCenterInfo";
+import { Board } from "./Board";
 import { AFTV_DATETIME_FORMAT } from "../../../format";
 
 export class Station {
@@ -16,17 +16,17 @@ export class Station {
   @Expose({ name: "groups" })
   public readonly groups: Group[];
 
-  @Type(() => Bbs)
+  @Type(() => Board)
   @Expose({ name: "menus" })
-  public readonly menus: Bbs[];
+  public readonly menus: Board[];
 
-  @Type(() => Upd)
+  @Type(() => BroadcastCenterInfo)
   @Expose({ name: "upd" })
-  public readonly upd: Upd;
+  public readonly upd: BroadcastCenterInfo;
 
-  @Type(() => Bbs)
+  @Type(() => Board)
   @Expose({ name: "vods" })
-  public readonly vods: Bbs[];
+  public readonly vods: Board[];
 
   @Type(() => Sns)
   @Expose({ name: "sns" })
@@ -79,9 +79,9 @@ export class Station {
   constructor(
     display: Display,
     groups: Group[],
-    menus: Bbs[],
-    upd: Upd,
-    vods: Bbs[],
+    menus: Board[],
+    upd: BroadcastCenterInfo,
+    vods: Board[],
     sns: Sns[],
     broadStart: DateTime,
     grade: number,

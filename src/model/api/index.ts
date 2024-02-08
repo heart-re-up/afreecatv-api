@@ -1,2 +1,2 @@
 export { BjStation } from "./bj/station/BjStation";
-export { Broad } from "./bj/station/Broad";
+export { Broadcast } from "./bj/station/Broadcast";

@@ -1,6 +1,9 @@
 import { Expose } from "class-transformer";
 
-export class Upd {
+/**
+ * 방송국 최신 정보
+ */
+export class BroadcastCenterInfo {
   @Expose({ name: "station_no" })
   public readonly stationNo: number;
 

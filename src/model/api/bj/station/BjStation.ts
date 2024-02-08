@@ -4,7 +4,7 @@ import { DateTime } from "luxon";
 import { Station } from "./Station";
 import { TopUser } from "./TopUser";
 import { Subscription } from "./Subscription";
-import { Broad } from "./Broad";
+import { Broadcast } from "./Broadcast";
 import { AFTV_DATETIME_FORMAT } from "../../../format";
 
 export class BjStation {
@@ -15,9 +15,9 @@ export class BjStation {
   @Expose({ name: "station" })
   public readonly station: Station;
 
-  @Type(() => Broad)
+  @Type(() => Broadcast)
   @Expose({ name: "broad" })
-  public readonly broad: Broad | null;
+  public readonly broadcast: Broadcast | null;
 
   @Type(() => TopUser)
   @Expose({ name: "starballoon_top" })
@@ -89,7 +89,7 @@ export class BjStation {
   constructor(
     profileImage: string,
     station: Station,
-    broad: Broad | null,
+    broad: Broadcast | null,
     starballoonTop: TopUser[],
     stickerTop: TopUser[],
     subscription: Subscription,
@@ -112,7 +112,7 @@ export class BjStation {
   ) {
     this.profileImage = profileImage;
     this.station = station;
-    this.broad = broad;
+    this.broadcast = broad;
     this.starballoonTop = starballoonTop;
     this.stickerTop = stickerTop;
     this.subscription = subscription;

@@ -1,6 +1,9 @@
 import { Expose } from "class-transformer";
 
-export class Broad {
+/**
+ * 방송정보
+ */
+export class Broadcast {
   @Expose({ name: "user_id" })
   public readonly userId: string; // "wlgml1219",
 

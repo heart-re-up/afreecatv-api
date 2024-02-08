@@ -1,4 +1,5 @@
-import { BjStation } from "./BjStation";
+import { plainToInstance } from "class-transformer";
+import { BjStation } from "./station/BjStation";
 
 export const getBjStation = (host: string) => async (bj: string) => {
   // const res = await fetch('/api/get-main-data')
@@ -13,6 +14,7 @@ export const getBjStation = (host: string) => async (bj: string) => {
   };
   const response = await fetch(url, { method: "GET", headers });
   const json = await response.json();
+  return plainToInstance(BjStation, json);
   // console.log(json);
-  return json as BjStation;
+  // return json as BjStation;
 };

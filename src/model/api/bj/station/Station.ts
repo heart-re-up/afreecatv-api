@@ -1,84 +1,114 @@
-export interface Display {
-  main_type: string;
-  title_type: "IMAGE" | "HTML";
-  title_text: string;
-  profile_text: string;
-  skin_type: number; // 0;
-  skin_no: number; // 0;
-  title_skin_image: string;
-}
+import { Expose, Transform, Type } from "class-transformer";
+import { DateTime } from "luxon";
+import { Sns } from "./Sns";
+import { Group } from "./Group";
+import { Display } from "./Display";
+import { Upd } from "./Upd";
+import { Bbs } from "./Bbs";
+import { AFTV_DATETIME_FORMAT } from "../../../format";
 
-export interface Upd {
-  station_no: number;
-  user_id: string;
-  asp_code: number;
-  fan_cnt: number;
-  today0_visit_cnt: number;
-  today1_visit_cnt: number;
-  total_visit_cnt: number;
-  today0_ok_cnt: number;
-  today1_ok_cnt: number;
-  today0_fav_cnt: number;
-  today1_fav_cnt: number;
-  total_ok_cnt: number;
-  total_view_cnt: number;
-}
+export class Station {
+  @Type(() => Display)
+  @Expose({ name: "display" })
+  public readonly display: Display;
 
-export interface Bbs {
-  bbs_no: number; //  63419261,
-  station_no: number; //  20068979,
-  auth_no: number; //  101,
-  w_auth_no: number; //  216,
-  display_type: number; //  108,
-  rnum: number; //  0,
-  line: number; //  1,
-  indention: number; //  0,
-  name: string; //  '방송 다시보기',
-  name_font: number; //  0,
-  main_view_yn: number; //  0,
-  view_type: number; //  1
-}
+  @Type(() => Group)
+  @Expose({ name: "groups" })
+  public readonly groups: Group[];
 
-export interface Group {
-  idx: number; // 3906,
-  group_no: number; // 3,
-  priority: number; // 7,
-  info: {
-    group_name: string; // "뉴비존";
-    group_class_name: string; // "badge_newbj";
-    group_background_color: string; // "#fb4848";
-  };
-}
+  @Type(() => Bbs)
+  @Expose({ name: "menus" })
+  public readonly menus: Bbs[];
 
-export interface Sns {
-  id: number; // 4992;
-  user_id: string; // "sol3712";
-  type: number; // 2;
-  channel_id: string; // "7268216076";
-  playlist_id: string; // "";
-  title: string; // "bj._.haru";
-  followers: number; // 221000;
-  state: number; // 0;
-  expire_at: string; // "2024-02-22 05:03:14";
-  created_at: string; // "2021-02-04 16:49:17";
-  updated_at: string; // "2024-02-07 00:45:10";
-}
+  @Type(() => Upd)
+  @Expose({ name: "upd" })
+  public readonly upd: Upd;
 
-export interface Station {
-  display: Display;
-  groups: Group[];
-  menus: Bbs[];
-  upd: Upd;
-  vods: Bbs[];
-  sns: Sns[];
-  broad_start: string; // "2023-09-12 20:45:39";
-  grade: number; // 0
-  jointime: string; // "2018-12-25 00:21:25";
-  station_name: string; // 'heart.re.up'
-  station_no: number; // 20068979
-  station_title: string; // ''
-  total_broad_time: number; // seconds
-  user_id: string; // 'devking'
-  user_nick: string; // 'ㅎㅎㅎ'
-  active_no: number; // 0
+  @Type(() => Bbs)
+  @Expose({ name: "vods" })
+  public readonly vods: Bbs[];
+
+  @Type(() => Sns)
+  @Expose({ name: "sns" })
+  public readonly sns: Sns[];
+
+  @Type(() => DateTime)
+  @Transform(
+    (params) => DateTime.fromFormat(params.value, AFTV_DATETIME_FORMAT),
+    {
+      toClassOnly: true,
+    },
+  )
+  @Expose({ name: "broad_start" })
+  public readonly broadStart: DateTime; // "2023-09-12 20:45:39";
+
+  @Expose({ name: "grade" })
+  public readonly grade: number; // 0
+
+  @Type(() => DateTime)
+  @Transform(
+    (params) => DateTime.fromFormat(params.value, AFTV_DATETIME_FORMAT),
+    {
+      toClassOnly: true,
+    },
+  )
+  @Expose({ name: "jointime" })
+  public readonly jointime: DateTime; // "2018-12-25 00:21:25";
+
+  @Expose({ name: "station_name" })
+  public readonly stationName: string; // 'heart.re.up'
+
+  @Expose({ name: "station_no" })
+  public readonly stationNo: number; // 20068979
+
+  @Expose({ name: "station_title" })
+  public readonly stationTitle: string; // ''
+
+  @Expose({ name: "total_broad_time" })
+  public readonly totalBroadTime: number; // seconds
+
+  @Expose({ name: "user_id" })
+  public readonly userId: string; // 'devking'
+
+  @Expose({ name: "user_nick" })
+  public readonly userNick: string; // 'ㅎㅎㅎ'
+
+  @Expose({ name: "active_no" })
+  public readonly activeNo: number; // 0
+
+  constructor(
+    display: Display,
+    groups: Group[],
+    menus: Bbs[],
+    upd: Upd,
+    vods: Bbs[],
+    sns: Sns[],
+    broadStart: DateTime,
+    grade: number,
+    jointime: DateTime,
+    stationName: string,
+    stationNo: number,
+    stationTitle: string,
+    totalBroadTime: number,
+    userId: string,
+    userNick: string,
+    activeNo: number,
+  ) {
+    this.display = display;
+    this.groups = groups;
+    this.menus = menus;
+    this.upd = upd;
+    this.vods = vods;
+    this.sns = sns;
+    this.broadStart = broadStart;
+    this.grade = grade;
+    this.jointime = jointime;
+    this.stationName = stationName;
+    this.stationNo = stationNo;
+    this.stationTitle = stationTitle;
+    this.totalBroadTime = totalBroadTime;
+    this.userId = userId;
+    this.userNick = userNick;
+    this.activeNo = activeNo;
+  }
 }

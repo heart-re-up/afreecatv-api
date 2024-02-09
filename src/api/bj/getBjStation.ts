@@ -14,6 +14,9 @@ const getBjStation = (host: string) => async (userId: string) => {
   };
   const response = await fetch(url, { method: "GET", headers });
   const json = await response.json();
-  return plainToInstance(BjStation, json as unknown);
+  if (response.ok) {
+    return plainToInstance(BjStation, json as unknown);
+  }
+  throw new Error(json);
 };
 export default getBjStation;

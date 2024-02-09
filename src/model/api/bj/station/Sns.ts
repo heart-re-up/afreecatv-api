@@ -1,8 +1,9 @@
+import "reflect-metadata";
 import { Expose, Transform, Type } from "class-transformer";
 import { DateTime } from "luxon";
 import { AFTV_DATETIME_FORMAT } from "../../../format";
 
-export class Sns {
+export default class Sns {
   @Expose({ name: "id" })
   public readonly id: number; // 4992;
 

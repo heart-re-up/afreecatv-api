@@ -1,10 +1,10 @@
 import { plainToInstance } from "class-transformer";
-import { BjStation } from "./station/BjStation";
+import BjStation from "../../model/api/bj/station/BjStation";
 
-export const getBjStation = (host: string) => async (bj: string) => {
+const getBjStation = (host: string) => async (userId: string) => {
   // const res = await fetch('/api/get-main-data')
   // console.log('api test', res)
-  const url = `${host}/api/${bj}/station`;
+  const url = `${host}/api/${userId}/station`;
   const headers = {
     Authority: "bjapi.afreecatv.com",
     Accept: "application/json",
@@ -18,3 +18,4 @@ export const getBjStation = (host: string) => async (bj: string) => {
   // console.log(json);
   // return json as BjStation;
 };
+export default getBjStation;

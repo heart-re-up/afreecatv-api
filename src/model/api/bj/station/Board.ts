@@ -1,9 +1,10 @@
+import "reflect-metadata";
 import { Expose } from "class-transformer";
 
 /**
  * 게시판
  */
-export class Board {
+export default class Board {
   @Expose({ name: "bbs_no" })
   public readonly bbsNo: number; // 63419261,
 

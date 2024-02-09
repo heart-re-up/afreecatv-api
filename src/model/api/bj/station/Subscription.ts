@@ -1,6 +1,7 @@
+import "reflect-metadata";
 import { Expose } from "class-transformer";
 
-export class Subscription {
+export default class Subscription {
   @Expose({ name: "count" })
   public readonly count: number; // 0
 

@@ -1,6 +1,7 @@
+import "reflect-metadata";
 import { Expose } from "class-transformer";
 
-export class Display {
+export default class Display {
   @Expose({ name: "main_type" })
   public readonly mainType: string;
 

@@ -1,7 +1,7 @@
-import { RequestSearchHistory } from "./RequestSearchHistory";
-import { ResponseSearchHistory } from "./ResponseSearchHistory";
+import RequestSearchHistory from "../../model/api/scketc/RequestSearchHistory";
+import ResponseSearchHistory from "../../model/api/scketc/ResponseSearchHistory";
 
-export const searchHistory = (host: string) => async (text: string) => {
+const searchHistory = (host: string) => async (text: string) => {
   const queries: RequestSearchHistory = {
     isMobile: "true",
     service: "list",
@@ -19,3 +19,5 @@ export const searchHistory = (host: string) => async (text: string) => {
   const json = await response.json();
   return json as ResponseSearchHistory;
 };
+
+export default searchHistory;

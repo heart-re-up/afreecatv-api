@@ -1,9 +1,10 @@
+import "reflect-metadata";
 import { Expose } from "class-transformer";
 
 /**
  * 방송정보
  */
-export class Broadcast {
+export default class Broadcast {
   @Expose({ name: "user_id" })
   public readonly userId: string; // "wlgml1219",
 

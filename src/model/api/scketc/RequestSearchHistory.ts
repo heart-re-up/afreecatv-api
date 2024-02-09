@@ -1,7 +1,7 @@
 declare type Method = "searchHistory";
 declare type IsMobile = "true" | "false";
 
-export interface RequestSearchHistory {
+export default interface RequestSearchHistory {
   [key: string]: string;
 
   m: Method;

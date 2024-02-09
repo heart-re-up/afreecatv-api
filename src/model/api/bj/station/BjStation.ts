@@ -1,13 +1,13 @@
 import "reflect-metadata";
 import { Expose, Transform, Type } from "class-transformer";
 import { DateTime } from "luxon";
-import { Station } from "./Station";
-import { TopUser } from "./TopUser";
-import { Subscription } from "./Subscription";
-import { Broadcast } from "./Broadcast";
+import Station from "./Station";
+import TopUser from "./TopUser";
+import Broadcast from "./Broadcast";
+import Subscription from "./Subscription";
 import { AFTV_DATETIME_FORMAT } from "../../../format";
 
-export class BjStation {
+export default class BjStation {
   @Expose({ name: "profile_image" })
   public readonly profileImage: string;
 

@@ -1,9 +1,10 @@
+import "reflect-metadata";
 import { Expose } from "class-transformer";
 
 /**
  * 방송국 최신 정보
  */
-export class BroadcastCenterInfo {
+export default class BroadcastCenterInfo {
   @Expose({ name: "station_no" })
   public readonly stationNo: number;
 

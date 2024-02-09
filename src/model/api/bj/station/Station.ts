@@ -1,13 +1,14 @@
+import "reflect-metadata";
 import { Expose, Transform, Type } from "class-transformer";
 import { DateTime } from "luxon";
-import { Sns } from "./Sns";
-import { Group } from "./Group";
-import { Display } from "./Display";
-import { BroadcastCenterInfo } from "./BroadcastCenterInfo";
-import { Board } from "./Board";
+import Sns from "./Sns";
+import Group from "./Group";
+import Display from "./Display";
+import BroadcastCenterInfo from "./BroadcastCenterInfo";
+import Board from "./Board";
 import { AFTV_DATETIME_FORMAT } from "../../../format";
 
-export class Station {
+export default class Station {
   @Type(() => Display)
   @Expose({ name: "display" })
   public readonly display: Display;
@@ -52,6 +53,7 @@ export class Station {
       toClassOnly: true,
     },
   )
+  /** 방송국 개설일 */
   @Expose({ name: "jointime" })
   public readonly jointime: DateTime; // "2018-12-25 00:21:25";
 

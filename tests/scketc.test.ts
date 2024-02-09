@@ -1,8 +1,8 @@
-import { api } from "../src";
+import afreecatvApi from "../src";
 
 const {
   etc: { searchHistory },
-} = api();
+} = afreecatvApi();
 describe("scketc", () => {
   test("searchHistory", async () => {
     const result = await searchHistory("wlgml1219");

@@ -1,6 +1,7 @@
+import "reflect-metadata";
 import { Expose } from "class-transformer";
 
-export class TopUser {
+export default class TopUser {
   @Expose({ name: "user_id" })
   public readonly userId: string;
 

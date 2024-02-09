@@ -1,8 +1,8 @@
-import { api } from "../src";
+import afreecatvApi from "../src";
 
 const {
   bj: { getBjStation },
-} = api();
+} = afreecatvApi();
 describe("getBjStation", () => {
   test("get", async () => {
     const result = await getBjStation("wlgml1219");

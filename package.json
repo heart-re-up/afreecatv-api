@@ -1,6 +1,6 @@
 {
   "name": "@afreecatv/api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -11,7 +11,8 @@
   "scripts": {
     "build": "tsup",
     "test": "jest",
-    "link": "pnpm link --global"
+    "link": "pnpm link --global",
+    "pub": "pnpm build && npm publish"
   },
   "publishConfig": {
     "access": "public"

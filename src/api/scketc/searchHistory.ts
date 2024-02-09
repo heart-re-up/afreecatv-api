@@ -1,3 +1,4 @@
+import { plainToInstance } from "class-transformer";
 import RequestSearchHistory from "../../model/api/scketc/RequestSearchHistory";
 import ResponseSearchHistory from "../../model/api/scketc/ResponseSearchHistory";
 
@@ -17,7 +18,7 @@ const searchHistory = (host: string) => async (text: string) => {
   };
   const response = await fetch(url, { method: "GET", headers });
   const json = await response.json();
-  return json as ResponseSearchHistory;
+  return plainToInstance(ResponseSearchHistory, json as unknown);
 };
 
 export default searchHistory;

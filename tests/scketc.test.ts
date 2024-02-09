@@ -3,15 +3,16 @@ import afreecatvApi from "../src";
 const {
   etc: { searchHistory },
 } = afreecatvApi();
+
+const searchTokens = ["wlgml1219", "sol3712", "dm0229", "devking"];
 describe("scketc", () => {
   test("searchHistory", async () => {
-    const result = await searchHistory("wlgml1219");
-    console.log(JSON.stringify(result, null, 4));
-    // result.station.groups.forEach(console.log);
-    // result.station.sns.forEach(console.log);
-    // console.log("===========vods");
-    // result.station.vods.forEach((e) => console.log(e.name));
-    // console.log("===========menus");
-    // result.station.menus.forEach((e) => console.log(e.name));
+    for (const token of searchTokens) {
+      const result = await searchHistory(token);
+      expect(result.history.searchToken).toBe(token);
+      expect(result.suggestBj.find((e) => e.userId === token)?.userId).toBe(
+        token,
+      );
+    }
   });
 });

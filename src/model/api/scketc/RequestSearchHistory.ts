@@ -1,13 +1,6 @@
-declare type Method = "searchHistory";
-declare type IsMobile = "true" | "false";
+import RequestScketcBase from "./RequestScketcBase";
 
-export default interface RequestSearchHistory {
-  [key: string]: string;
-
-  m: Method;
-  isMobile: IsMobile;
-  w: string; // webm
-  v: string; // 버전
-  service: string;
+export default interface RequestSearchHistory extends RequestScketcBase {
+  service: string; // list
   d: string; // 검색어인듯
 }

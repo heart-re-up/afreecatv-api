@@ -71,7 +71,8 @@ echo '{
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "import/no-extraneous-dependencies": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }
 ' > "$CONFIG_FILE"

@@ -8,19 +8,28 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "keywords": [
+    "afreeca",
+    "afreecatv",
+    "아프리카",
+    "아프리카tv"
+  ],
+  "author": "heart.re.up",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heart-re-up/afreecatv-extension-types/issues"
+  },
+  "homepage": "https://github.com/heart-re-up/afreecatv-extension-types#readme",
   "scripts": {
     "build": "tsup",
     "test": "jest",
     "link": "pnpm link --global",
     "pub": "pnpm build && npm publish"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "private": false,
-  "keywords": [],
-  "author": "heart.re.up",
-  "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/luxon": "^3.4.2",
